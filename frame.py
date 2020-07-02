@@ -99,7 +99,7 @@ combo3.grid(columnspan = 3, column = 1, row = 9, pady = 5)
 
 var = tk.IntVar(root, value = 22)
 
-scale = tk.Scale(root_func, label = "Marker Size", orient = "horizontal", variable = var, from_ = 1, to = 30, length = 400)
+scale = tk.Scale(root_func, label = "Marker Size", orient = "horizontal", variable = var, from_ = 1, to = 30, length = 300)
 scale.grid(columnspan = 4, row = 10, pady = 20)
 
 ax1 = tk.Button(root_func, text = "Axis1", width = 7, command = lambda:[func.plt_ax1(), canvas.draw()])

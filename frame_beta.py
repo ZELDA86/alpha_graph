@@ -17,19 +17,11 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import func
 
 root = tk.Tk()
-root.title("alpha Graph")
-
-def area(base, area_name, col, row, padx = 0, pady = 0, ipadx = 0, ipady = 0):
-    area = tk.frame(base)
-    area.grid(column = col, row = row, padx = padx, pady = pady, ipadx = ipadx, ipady = ipady)
-    return area
-
+root.title("Alpha Graph")
 
 ########## canvas area ##########
 root_graph = tk.Frame(root)
 root_graph.grid(column = 0, row = 0, padx =30, pady = 30)
-
-# area(root, root_graph, 0, 0)
 
 canvas = FigureCanvasTkAgg(func.fig, master = root_graph)  # Generate canvas instance, Embedding fig in root
 canvas.draw()
@@ -115,7 +107,7 @@ ax1.grid(columnspan = 2, column = 0, row = 11)
 ax2 = tk.Button(root_func, text = "Axis2", width = 7, command = lambda:[func.plt_ax2(), canvas.draw()])
 ax2.grid(columnspan = 2, column = 2, row = 11)
 
-button1 = tk.Button(root_func, text = "Save", width = 7, command = lambda:[func.text(0.3,0.3,"$x^2$",30), canvas.draw()])
+button1 = tk.Button(root_func, text = "Save", width = 7, command = lambda:func.plt.savefig("test.png"))
 button1.grid(columnspan = 4, row = 12, pady = 5, ipadx = 20)
 
 button2 = tk.Button(root_func, text = "clear", width = 7, command = lambda:[func.plt.cla(), canvas.draw()])

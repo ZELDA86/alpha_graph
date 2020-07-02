@@ -37,6 +37,3 @@ def plt_ax2():
     y2 = np.sin(x2)
     ax2 = ax1.twinx()
     ax2.plot(x2, y2, marker = "s", markersize = 5, linestyle = "", clip_on = False, color = "tab:orange")
-
-def text(x, y, txt, fontsize):
-    plt.text(x, y, txt, fontsize = fontsize)

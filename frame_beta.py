@@ -10,7 +10,6 @@ This source code or any portion thereof must not be
 reproduced or used in any manner whatsoever.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 import tkinter as tk
 import tkinter.ttk as ttk
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg

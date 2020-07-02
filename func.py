@@ -2,7 +2,7 @@
 Project Name    : Alpha Graph
 File Name       : func.py
 Encoding        : UTF-8
-Creation Date   : June/28/2020
+Creation Date   : July/2/2020
 
 Copyright (c) 2020 Hiroki MATSUI. All rights reserved.
 
